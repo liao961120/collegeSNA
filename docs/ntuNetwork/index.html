@@ -13139,7 +13139,7 @@ div.output_area pre {
 <h1 id="&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;">&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;<a class="anchor-link" href="#&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;">&#182;</a></h1><p><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/liao961120/collegeSNA/blob/master/network_data">資料下載</a></p>
 <h4 id="ntuNetwork_edges.csv"><a href="https://github.com/liao961120/collegeSNA/blob/master/network_data/ntuNetwork_edges.csv"><code>ntuNetwork_edges.csv</code></a><a class="anchor-link" href="#ntuNetwork_edges.csv">&#182;</a></h4><ol>
 <li><code>node1</code>, <code>node2</code>: 臺大各校系的 ID</li>
-<li><code>edgeWeight</code>: 同時申請 <code>node1</code> 和 <code>node2</code> 的數量</li>
+<li><code>edgeWeight</code>: 同時申請 <code>node1</code> 和 <code>node2</code> 的數量。<strong>最小值是 3</strong>，因為原始資料的關係，小於 3 的連結都被濾掉了。</li>
 </ol>
 <h4 id="ntuNetwork_attr.csv"><a href="https://github.com/liao961120/collegeSNA/blob/master/network_data/ntuNetwork_attr.csv"><code>ntuNetwork_attr.csv</code></a><a class="anchor-link" href="#ntuNetwork_attr.csv">&#182;</a></h4><ol>
 <li><code>id</code>: 對應到 <code>ntuNetwork_edges.csv</code> 中的 <code>node1</code>, <code>node2</code></li>

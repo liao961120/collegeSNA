@@ -1,4 +1,4 @@
-id,department,recruit_quota,applied_region
+id,label,recruit_quota,applied_region
 001012,中國文學系,21,"台北x23, 新北x4, 桃園x5, 新竹x6, 台中x11, 南投x1, 彰化x5, 雲林x1, 嘉義x4, 台南x3, 高雄x7, 屏東x2, 澎湖x7"
 001602,護理學系(公費生),2,"台北x3, 桃園x1, 新竹x1, 台中x1, 宜蘭x1"
 001592,生化科技學系,20,"台北x29, 新北x5, 基隆x1, 桃園x3, 新竹x2, 台中x3, 彰化x2, 雲林x1, 嘉義x1, 台南x1, 高雄x7, 澎湖x2"

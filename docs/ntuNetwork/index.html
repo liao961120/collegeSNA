@@ -13138,15 +13138,16 @@ div.output_area pre {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;">&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;<a class="anchor-link" href="#&#36039;&#26009;&#35722;&#38917;&#35498;&#26126;">&#182;</a></h1><p><a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/liao961120/collegeSNA/blob/master/network_data">資料下載</a></p>
 <h4 id="ntuNetwork_edges.csv"><a href="https://github.com/liao961120/collegeSNA/blob/master/network_data/ntuNetwork_edges.csv"><code>ntuNetwork_edges.csv</code></a><a class="anchor-link" href="#ntuNetwork_edges.csv">&#182;</a></h4><ol>
-<li><code>node1</code>, <code>node2</code>: 臺大各校系的 ID</li>
-<li><code>edgeWeight</code>: 同時申請 <code>node1</code> 和 <code>node2</code> 的數量。<strong>最小值是 3</strong>，因為原始資料的關係，小於 3 的連結都被濾掉了。</li>
+<li><code>Source</code>, <code>Target</code>: 臺大各校系的 ID。由於是無向網絡，<code>Source</code> 與 <code>Target</code> 並無順序關係。</li>
+<li><code>Weight</code>: 同時申請 <code>Source</code> 和 <code>Target</code> 的數量。<strong>最小值是 3</strong>，因為原始資料的關係，小於 3 的連結都被濾掉了。</li>
 </ol>
 <h4 id="ntuNetwork_attr.csv"><a href="https://github.com/liao961120/collegeSNA/blob/master/network_data/ntuNetwork_attr.csv"><code>ntuNetwork_attr.csv</code></a><a class="anchor-link" href="#ntuNetwork_attr.csv">&#182;</a></h4><ol>
-<li><code>id</code>: 對應到 <code>ntuNetwork_edges.csv</code> 中的 <code>node1</code>, <code>node2</code></li>
-<li><code>department</code>: 臺灣大學各系</li>
+<li><code>id</code>: 對應到 <code>ntuNetwork_edges.csv</code> 中的 <code>Source</code>, <code>Target</code></li>
+<li><code>label</code>: 臺灣大學各科系名稱</li>
 <li><code>recruit_quota</code>: 招生名額 (外加名額已併入)</li>
-<li><code>applied_region</code>: 申請者來自的地區 (依准考證號碼)。這個變項我沒有再繼續處理下去 (如果有分析上的需要，可以用 R 處理成可用的資訊?)</li>
+<li><code>applied_region</code>: 申請者來自的地區 (依准考證號碼)。這個變項並未進一步處理成結構性資料。</li>
 </ol>
+<h4 id="ntuNetwork_attr2.csv"><a href="https://github.com/liao961120/collegeSNA/blob/master/network_data/ntuNetwork_attr2.csv"><code>ntuNetwork_attr2.csv</code></a><a class="anchor-link" href="#ntuNetwork_attr2.csv">&#182;</a></h4><p>同 <code>ntuNetwork_attr.csv</code>，但新增一欄學院資訊。</p>
 
 </div>
 </div>
